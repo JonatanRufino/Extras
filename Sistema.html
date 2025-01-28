@@ -3,62 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sistema de Procedimentos</title>
+  <title>Planos e Extras</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #007bff, #6a11cb);
+      color: #fff;
+      margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #34e89e, #0f3443);
-      color: #fff;
+      min-height: 100vh;
     }
-    .system-container {
+    .container {
       background: rgba(255, 255, 255, 0.1);
-      padding: 30px;
-      border-radius: 15px;
+      border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      text-align: center;
+      padding: 20px;
+      max-width: 800px;
       width: 100%;
-      max-width: 600px;
     }
     h1 {
-      margin-bottom: 20px;
-      font-size: 1.8rem;
+      text-align: center;
       color: #fff;
-    }
-    p {
-      font-size: 1rem;
       margin-bottom: 20px;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
+    h2 {
+      color: #eaeaea;
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
       margin-bottom: 20px;
+      justify-content: center;
     }
-    table th, table td {
-      padding: 10px;
-      text-align: left;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-    }
-    table th {
-      background: rgba(255, 255, 255, 0.2);
-    }
-    .logout-button {
-      margin-top: 20px;
+    button {
       padding: 10px 20px;
-      background: #ff4d4d;
       border: none;
       border-radius: 5px;
+      background-color: #007bff;
       color: #fff;
       cursor: pointer;
-      font-size: 1rem;
-      transition: background 0.3s;
+      transition: background-color 0.3s, transform 0.2s;
     }
-    .logout-button:hover {
-      background: #d93636;
+    button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+    .textarea-container {
+      margin-top: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #1e1e1e;
+      color: #eaeaea;
+      resize: none;
+      font-family: Arial, sans-serif;
+    }
+    .copy-button {
+      margin-top: 10px;
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #28a745;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .copy-button:hover {
+      background-color: #218838;
     }
   </style>
 </head>
